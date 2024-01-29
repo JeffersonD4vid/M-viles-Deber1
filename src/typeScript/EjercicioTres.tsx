@@ -4,6 +4,7 @@
 export const EjercicioTres = () => {
 
     const arregloNumeros = [5,10,15,20,25,30,35,40,45,50];
+    
     const multArreglo  = arregloNumeros.map(x => x * 5);
     
   return (

@@ -7,11 +7,14 @@ export const EjercicioDos = () => {
     
 
     const arreglo =(numeros:number[]) =>{
+
+      //Se ultilizo la funcion reduce para poder sumar todos los elementos del arreglo
         return numeros.reduce((total, num) => total + num, 0);
     }
 
+    //Se crear una constante para que almacene la suma de todos los arreglos
     const sumaNumeros: number  = arreglo(ejemplo);
-
+    
   return (
     <>
         <h3>Ejercicio 2</h3>

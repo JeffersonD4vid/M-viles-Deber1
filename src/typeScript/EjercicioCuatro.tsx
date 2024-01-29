@@ -28,17 +28,26 @@ export const EjercicioCuatro = () => {
         }
     ];
 
-    const calPromedio = (alumno:Alumnos):number =>{
-        const sumaCalificaciones = alumno.calificacion + alumno.calificacion;
-        const promedio = sumaCalificaciones / alumno.calificacion;
+    const calPromedio = () =>{   
+
+        let sumCali = 0;
+
+        // Sumar todas las calificaciones
+        for (let i = 0; i < alumnos.length; i++) {
+            sumCali += alumnos[i].calificacion;
+        }
+    
+        // Calcular el promedio
+        const promedio = sumCali / alumnos.length;
+    
         return promedio;
+
     };
     
   return (
     <>
         <h3>Ejercicio 4</h3>
-        <span>El promedio de las calificaciones es: {}</span>
+        <span>El promedio de las calificaciones es: {calPromedio()}</span>
     </>
-
   )
 }
